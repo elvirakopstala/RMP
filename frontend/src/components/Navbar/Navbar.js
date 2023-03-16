@@ -1,14 +1,11 @@
 import React, { Component } from "react";
-import { menuItems } from "./MenuItems";
+import { navItems } from "./NavItems";
 import "./Navbar.css"
+import "../Body/BodyComponent.css"
 
-class Navbar extends Component {
+
+class NavItems extends Component {
   state = { clicked: false}
-
-  // handleClick = () => {
-  //   this.setState({ clicked:!clicked})
-  // }
-
 
   render () {
     return (
@@ -19,7 +16,7 @@ class Navbar extends Component {
           "fa-light fa-bars"}></i>         
         </div>
         <ul className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
-          {menuItems.map((item, index) => {
+          {navItems.map((item, index) => {
             return (
               <li key={index}>
                 <a className={item.cName} href={item.url}>
@@ -34,4 +31,4 @@ class Navbar extends Component {
   }
 }
 
-export default Navbar;
+export default NavItems;

@@ -1,63 +1,64 @@
-export const bodyItems = [
+export const colorList = [
   {
     title: "Hi, i'm color ",
     name: 'peacock', 
     // color: { R: 0, G: 128, B: 128 },
+    colorHex: "#00A4B4",
     cName: "color"
   },
   {
     title: "Hi, i'm color ",
-    name: 'navy', 
-    // color: { R: 19, G: 43, B: 83 },
+    name: 'navy blue', 
+    colorHex: "#4B68B8",
     cName: "color"
   },
   {
     title: "Hi, i'm color ",
-    name: 'taupe', 
-    // color: { R: 176, G: 156, B: 130 },
+    name: 'taupe brown', 
+    colorHex: "#483C32",
     cName: "color"
   },
   {
     title: "Hi, i'm color ",
     name: 'burgundy', 
-    // color: { R: 117, G: 15, B: 23 },
+    colorHex: "#800020",
     cName: "color"
   },
   {
     title: "Hi, i'm color ",
     name: 'olive', 
-    // color: { R: 128, G: 128, B: 0 },
+    colorHex: "#808000",
     cName: "color"
   },
   {
     title: "Hi, i'm color ",
     name: 'gray', 
-    // color: { R: 128, G: 128, B: 128 },
+    colorHex: "#808080",
     cName: "color"
   },
   {
     title: "Hi, i'm color ",
     name: 'pink', 
-    // color: { R: 235, G: 111, B: 164 },
+    colorHex: "#FFC0CB",
     cName: "color"
   },
   ,
   {
     title: "Hi, i'm color ",
     name: 'purple', 
-    // color: { R: 235, G: 111, B: 164 },
+    colorHex: "#A020F0",
     cName: "color"
   },
   {
     title: "Hi, i'm color ",
     name: 'baby blue', 
-    // color: { R: 235, G: 111, B: 164 },
+    colorHex: "#89CFF0",
     cName: "color"
   },
   {
     title: "Hi, i'm color ",
     name: 'beige', 
-    // color: { R: 235, G: 111, B: 164 },
+    colorHex: "#F5F5DC",
     cName: "color"
   }
 ]
