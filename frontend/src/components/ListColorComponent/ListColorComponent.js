@@ -8,13 +8,15 @@ class ListColorComponent extends Component {
         return(
           <div className="paint-grid">
               {colorList.map((item, index) => 
-              <ColorCardComponent 
+              <ColorCardComponent
+                key = {index + item.colorHex}
                 title={item.title} 
                 name={item.name} 
                 colorHex={item.colorHex}/>
               )}
-              
-              <div className="grid-element" onClick={this.props.handler}></div>
+
+              <div className="grid-element" onClick={this.props.handler}>
+              </div>
           </div>
         )
       }

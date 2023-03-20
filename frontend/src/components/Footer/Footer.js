@@ -8,7 +8,7 @@ class Footer extends Component {
 
   render() {
     return (
-      <footer class="FooterItems">
+      <footer className="FooterItems">
         <ul className="footer-links">
           {footerItems.map((item, index) => {
             return (
@@ -20,7 +20,7 @@ class Footer extends Component {
             )
           })}
         </ul>
-        <p class="footer-copyright">
+        <p className="footer-copyright">
           &copy; Copyright by
           PAINTit, your color partner online
         </p>
