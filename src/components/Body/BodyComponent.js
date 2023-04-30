@@ -1,31 +1,21 @@
 import React, { Component } from "react";
-import "./BodyComponent.css"
+import "./BodyComponent.scss";
 import ListColorComponent from "../ListColorComponent/ListColorComponent";
 
 class BodyComponent extends Component {
-  constructor(props) {
-    super(props)
-    this.handler = this.handler.bind(this)
-  }
-  handler() {
-    this.setState({
-      someVar: "hi there"
-    })
-  }
-  render () 
-  {
+  render() {
     return (
       <div className="main-part">
-        <h5 className="main-heading">paint your life colorful</h5>
+        <div className="background" />
         <div className="main-component">
-          <div className="paint-grid">
-              <ListColorComponent handler = {this.handler} />
+          <div className="paint-grids">
+            <ListColorComponent title="My colors" user={true} />
+            <ListColorComponent title="Seasonal colors" />
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
-
 
 export default BodyComponent;

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import {footerItems} from "./FooterItems";
-import "./Footer.css"
-import "../Body/BodyComponent.css"
+import "./Footer.scss"
+import "../Body/BodyComponent.scss"
 
 
 class Footer extends Component {

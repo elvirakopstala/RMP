@@ -1,0 +1,14 @@
+.paint-grid {
+  display: grid;
+  grid-template-columns: repeat(8, auto);
+}
+
+.color-list-title {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 32px;
+    font-weight: bold;
+    color: darkmagenta;
+    font-family: "Antonio", sans-serif;
+    letter-spacing: 1.5px;
+}

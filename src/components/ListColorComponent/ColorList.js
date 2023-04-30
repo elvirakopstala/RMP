@@ -1,64 +1,62 @@
 export const colorList = [
   {
-    title: "Hi, i'm color ",
-    name: 'peacock', 
-    // color: { R: 0, G: 128, B: 128 },
-    colorHex: "#00A4B4",
-    cName: "color"
+    title: "LOL",
+    name: "lol", 
+    colorHex: "#101",
+    cName: "lol"
   },
   {
-    title: "Hi, i'm color ",
-    name: 'navy blue', 
-    colorHex: "#4B68B8",
-    cName: "color"
+    title: "FBI",
+    name: "fbi", 
+    colorHex: "#FB1",
+    cName: "fbi"
   },
   {
-    title: "Hi, i'm color ",
-    name: 'taupe brown', 
-    colorHex: "#483C32",
-    cName: "color"
+    title: "COFFEE",
+    name: "coffee", 
+    colorHex: "#C0FF33",
+    cName: "COFFEE"
   },
   {
-    title: "Hi, i'm color ",
-    name: 'burgundy', 
-    colorHex: "#800020",
-    cName: "color"
+    title: "FACADE",
+    name: "facade", 
+    colorHex: "#FACADE",
+    cName: "facade"
   },
   {
-    title: "Hi, i'm color ",
-    name: 'olive', 
-    colorHex: "#808000",
-    cName: "color"
+    title: "GOOGLE",
+    name: "google", 
+    colorHex: "#600613",
+    cName: "google"
   },
   {
-    title: "Hi, i'm color ",
-    name: 'gray', 
-    colorHex: "#808080",
-    cName: "color"
+    title: "0FF",
+    name: "off", 
+    colorHex: "#0FF",
+    cName: "off"
   },
   {
-    title: "Hi, i'm color ",
-    name: 'pink', 
-    colorHex: "#FFC0CB",
-    cName: "color"
-  },
-  ,
-  {
-    title: "Hi, i'm color ",
-    name: 'purple', 
-    colorHex: "#A020F0",
-    cName: "color"
+    title: "ACCESS",
+    name: "access", 
+    colorHex: "#ACCE55",
+    cName: "access"
   },
   {
-    title: "Hi, i'm color ",
-    name: 'baby blue', 
-    colorHex: "#89CFF0",
-    cName: "color"
+    title: "DAD",
+    name: "dad", 
+    colorHex: "#D4D",
+    cName: "dad"
   },
   {
-    title: "Hi, i'm color ",
-    name: 'beige', 
-    colorHex: "#F5F5DC",
-    cName: "color"
+    title: "SPY",
+    name: "spy", 
+    colorHex: "#007",
+    cName: "spy"
+  },
+  {
+    title: "DOT",
+    name: "dot", 
+    colorHex: "#D07",
+    cName: "dot"
   }
 ]
