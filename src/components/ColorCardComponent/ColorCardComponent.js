@@ -1,20 +1,17 @@
-import React, { Component } from 'react';
-import "../Body/BodyComponent.css"
-
-
+import React, { Component } from "react";
+import "./ColorCard.style.scss";
 
 export default class ColorCardComponent extends Component {
   render() {
-    const {title, name, colorHex} = this.props;
-    console.log(this.props);
+    const { title, colorHex } = this.props;
+
     return (
-      <div className="grid-element" style={{backgroundColor: colorHex}}>
-        {title} - {name} - {colorHex}
+      <div className="grid-element" style={{ backgroundColor: colorHex }}>
+        <div className="wrapper">
+        <div className="color">{colorHex}</div>
+          <div className="title">{title}</div>
+        </div>
       </div>
-    )
+    );
   }
 }
-
-
-
-

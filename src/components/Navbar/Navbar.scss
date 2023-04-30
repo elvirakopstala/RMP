@@ -1,0 +1,85 @@
+.navbar {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+
+  &-logo {
+    max-width: 130px;
+
+    &-with-titles {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      font-size: 42px;
+      font-family: "Antonio", sans-serif;
+      letter-spacing: 1.5px;
+      color: darkmagenta;
+    }
+  }
+
+  &-heading {
+    font-family: "Antonio", sans-serif;
+    color: darkmagenta;
+    text-align: right;
+    margin-top: -25px;
+    margin-bottom: 30px;
+  }
+}
+.fa-light {
+  margin-left: 0.5rem;
+  font-size: 1.6rem;
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  width: 70vw;
+  justify-content: end;
+  margin-right: 2rem;
+}
+
+.nav-links {
+  background-color: darkmagenta;
+  border: none;
+  font-size: 24px;
+  padding: 14px;
+  color: white;
+  font-family: "Antonio", sans-serif;
+}
+
+.nav-links:hover {
+  cursor: pointer;
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  perspective: 1000px;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-2px, 0, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(2px, 0, 0);
+  }
+}

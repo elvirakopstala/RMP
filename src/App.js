@@ -11,7 +11,6 @@ const App = () => {
       <NavItems />
       <BodyComponent />
       <Footer />
-
     </div>
   );
 }
