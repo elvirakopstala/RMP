@@ -1,0 +1,31 @@
+.AddColor {
+    &-Grid {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-width: 1440px;
+    }
+
+    &-Wrapper {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    &-Controls {
+        margin-top: 30px;
+
+        input {
+            font-size: 36px;
+        }
+
+        button {
+            font-size: 36px;
+        }
+    }
+
+    &-Heading {
+        font-size: 32px;
+        padding: 5px;
+    }
+}

@@ -1,6 +1,6 @@
 .paint-grid {
-  display: grid;
-  grid-template-columns: repeat(8, auto);
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .color-list-title {
