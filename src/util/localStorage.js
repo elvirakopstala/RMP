@@ -1,6 +1,6 @@
 import { reactLocalStorage } from "reactjs-localstorage";
 
-export const USER_ADDED_COLOR_KEY = "my-colors";
+export const USER_ADDED_COLOR_KEY = "added-colors";
 
 export const getColorsListFromLS = () => {
   const colorList = reactLocalStorage.get(USER_ADDED_COLOR_KEY);
@@ -9,7 +9,7 @@ export const getColorsListFromLS = () => {
     return [];
   }
 
-  return JSON.parse(colorList);
+  return JSON.parse(colorList).state.colors;
 };
 
 export const setColorsListFormLS = (colorsList) => {

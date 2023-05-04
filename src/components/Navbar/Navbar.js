@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { navItems } from "./NavItems";
 import "./Navbar.scss";
 import "../Body/BodyComponent.scss";
 import icon from "./img/icon.png";
@@ -13,10 +12,6 @@ class NavItems extends Component {
         <div className="wrapper">
           <div className="navbar-logo-with-titles">
             <img src={icon} className="navbar-logo" alt="App logo" />
-            Colorize
-          </div>
-          <div className="navbar-heading">
-            Let's dive into the Ocean of Colors
           </div>
         </div>
         <div className="menu-icon" onClick={this.handleClick}>
