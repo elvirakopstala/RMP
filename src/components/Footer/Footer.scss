@@ -1,10 +1,8 @@
 .FooterItems {
-  background: white;
-  height:10vh;
-  justify-content: center;
+  display: flex;
   align-items: center;
-  font-size: 1.2rem;
-  margin-bottom: 0px;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .FooterItems {
@@ -25,18 +23,18 @@
 }
 
 .footer-link {
-  color: rgb(113, 108, 108);
+  color: #000;
   text-decoration: none;
   padding: 0.5rem 1rem;
 }
 
 .footer-link:hover {
-  color:rgb(107, 66, 66);
+  color: #000;
   transition: all 0.2s ease-out;
 }
 
 .footer-copyright {
-  color: rgb(113, 108, 108);
+  color: #000;
   padding: 20px 0;
   font-size: 14px;
   display: flex;

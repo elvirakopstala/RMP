@@ -5,7 +5,7 @@ import ListColorComponent from "../ListColorComponent/ListColorComponent";
 class BodyComponent extends Component {
   render() {
     return (
-      <div className="main-part">
+      <div className="BodyComponent">
         <div className="background" />
         <div className="main-component">
           <div className="paint-grids">

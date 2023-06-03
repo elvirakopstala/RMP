@@ -1,0 +1,42 @@
+.Home {
+    &-Link {
+        background-color: #D07;
+        color: #fff;
+        padding: 20px;
+        font-size: 20px;
+        display: block;
+        position: absolute;
+        font-size: 28px;
+        font-weight: 600;
+        right: 0;
+        top: 65%;
+    }
+
+    &-Logo {
+        position: absolute;
+        right: 100px;
+        
+        img {
+            max-width: 250px;
+        }
+    }
+
+    &-Heading {
+        color: #fff;
+        font-size: 42px;
+        padding-left: 10vw;
+        padding-top: 10vh;
+        position: absolute;
+        font-weight: 700;
+
+        span {
+            display: block;
+
+            &:first-of-type {
+                
+                margin-bottom: 100px;
+                font-size: 100px;
+            }
+        }
+    }
+}
