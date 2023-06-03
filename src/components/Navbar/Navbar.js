@@ -2,32 +2,29 @@ import React, { Component } from "react";
 import "./Navbar.scss";
 import "../Body/BodyComponent.scss";
 import icon from "./img/icon.png";
+import { Link } from 'react-router-dom'
 
-class NavItems extends Component {
-  state = { clicked: false };
-
+class Navbar extends Component {
   render() {
     return (
       <nav className="navbar">
-        <div className="wrapper">
-          <div className="navbar-logo-with-titles">
-            <img src={icon} className="navbar-logo" alt="App logo" />
-          </div>
+        <div className="navbar-logo-with-titles">
+          <img src={icon} className="navbar-logo" alt="Color choose app logo" />
         </div>
-        <div className="menu-icon" onClick={this.handleClick}>
-          <i
-            className={
-              this.state.clicked ? "fa-light fa-xmark" : "fa-light fa-bars"
-            }
-          ></i>
-        </div>
-        <div className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
-          <button className="nav-links">Add my Color</button>
-          <button className="nav-links">Remove my Color</button>
-        </div>
+        <ul className="nav-list">
+          <li>
+            <Link className="nav-links" to="/main">Home</Link>
+          </li>
+          <li>
+            <Link className="nav-links" to="/main/add-color">Add Color</Link>
+          </li>
+          <li>
+            <Link className="nav-links" to="/main/remove-color">Remove Color</Link>
+          </li>
+        </ul>
       </nav>
     );
   }
 }
 
-export default NavItems;
+export default Navbar;

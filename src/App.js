@@ -1,54 +1,41 @@
 import React from "react";
 import "./styles/root.scss";
-import NavItems from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import BodyComponent from "./components/Body/BodyComponent";
 import { Routes, Route, Outlet, Link } from "react-router-dom";
 import AddColorComponent from './components/AddColor/AddColor.component'
-import RemoveColorComponent from './components/RemoveColor/RemoveColor.component'
+import RemoveColorComponent from './components/RemoveColor/RemoveColor.component';
+import Navbar from './components/Navbar/Navbar';
+import Home from './components/Home/Home.component';
 
 const App = () => {
   return (
     <Routes>
-      <Route path="/" element={<Layout />}>
+      <Route path="/" element={<HomeLayout />}>
+        <Route index element={<Layout /> } />
+      </Route>
+      <Route path="/main" element={<Layout />}>
         <Route index element={<BodyComponent /> } />
-        <Route path="add-color" element={<AddColorComponent />} />
-        <Route path="remove-color" element={<RemoveColorComponent />} />
-
-
-        {/* Using path="*"" means "match anything", so this route
-                acts like a catch-all for URLs that we don't have explicit
-                routes for. */}
+        <Route path="/main/add-color" element={<AddColorComponent />} />
+        <Route path="/main/remove-color" element={<RemoveColorComponent />} />
         <Route path="*" element={<NoMatch />} />
       </Route>
     </Routes>
   );
 }
 
+function HomeLayout() {
+  return (
+    <div className="HomeApp">
+      <Home />
+    </div>
+  );
+}
+
 function Layout() {
   return (
     <div className="App">
-      {/* A "layout route" is a good place to put markup you want to
-          share across all the pages on your site, like navigation. */}
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/add-color">Add Color</Link>
-          </li>
-          <li>
-            <Link to="/remove-color">Remove Color</Link>
-          </li>
-        </ul>
-      </nav>
-
-      <hr />
-
-      {/* An <Outlet> renders whatever child route is currently active,
-          so you can think about this <Outlet> as a placeholder for
-          the child routes we defined above. */}
+      <Navbar />
       <Outlet />
       <Footer />
     </div>
@@ -68,10 +55,3 @@ function NoMatch() {
 
 
 export default App;
-
-
-// <div className="App">
-//   <NavItems />
-//
-//
-// </div>

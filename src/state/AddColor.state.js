@@ -7,7 +7,7 @@ const useColors = create(
       colors: [],
       addColor: (color) => set((state) => ({ colors: [...state.colors, color] })),
       removeColor: (color) => set((state) => (
-        { colors: [...state.colors.filter((colorState) => colorState.colorHex !== color.colorHex)] }
+        { colors: [...state.colors.filter((colorState) => (colorState.colorHex !== color.colorHex) && (colorState.name !== color.name))] }
       )),
     }),
     {

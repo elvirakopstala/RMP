@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './AddColor.style.scss';
-import { PhotoshopPicker, ChromePicker, TwitterPicker, SwatchesPicker } from 'react-color'
+import { PhotoshopPicker, SwatchesPicker } from 'react-color'
 import { Link } from "react-router-dom";
 import useColors from './../../state/AddColor.state';
 
@@ -9,7 +9,7 @@ const AddColorComponent = () => {
   const [colorName, setColorName ] = useState('')
   const addColor = useColors((state) => state.addColor)
 
-  const handleChangeComplete = (color, event) => {
+  const handleChangeComplete = (color) => {
     setBackground(color.hex);
   };
 
@@ -22,21 +22,11 @@ const AddColorComponent = () => {
   }
   
     return (
-      <>
+      <div className='main-component'>
+                <div className="background" />
         <div className="AddColor-Wrapper">
-          <p className="AddColor-Heading">Your color name is: {colorName}</p>
           <div className="AddColor-Grid">
             <PhotoshopPicker
-              color={ background }
-              onChange={ handleChangeComplete }
-              onChangeComplete={ handleChangeComplete }
-            />
-            <ChromePicker
-              color={ background }
-              onChange={ handleChangeComplete }
-              onChangeComplete={ handleChangeComplete }
-            />
-            <TwitterPicker
               color={ background }
               onChange={ handleChangeComplete }
               onChangeComplete={ handleChangeComplete }
@@ -50,11 +40,11 @@ const AddColorComponent = () => {
           <div className="AddColor-Controls">
             <input type="text" placeholder='Your color name' value={colorName} onChange={handleNameChange}/>
             <button onClick={ handleColorSet }>
-              <Link to="/">SAVE</Link>
+              <Link to="/main">SAVE</Link>
             </button>
           </div>
         </div>
-      </>
+      </div>
     );
 }
 

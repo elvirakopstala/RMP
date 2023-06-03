@@ -1,31 +1,42 @@
 .AddColor {
-    &-Grid {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        min-width: 1440px;
+  &-Grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 1440px;
+
+    .swatches-picker {
+      margin-top: -55px;
+
+      & > div > div:nth-child(2) > div {
+        overflow-y: inherit !important;
+      }
     }
+  }
 
-    &-Wrapper {
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-    }
+  &-Wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
 
-    &-Controls {
-        margin-top: 30px;
+  &-Controls {
+    display: flex;
+    justify-content: center;
+    margin-right: 350px;
 
-        input {
-            font-size: 36px;
-        }
-
-        button {
-            font-size: 36px;
-        }
-    }
-
-    &-Heading {
-        font-size: 32px;
+    input {
+        font-size: 30px;
         padding: 5px;
     }
+
+    button {
+      font-size: 36px;
+    }
+  }
+
+  &-Heading {
+    font-size: 32px;
+    padding: 5px;
+  }
 }

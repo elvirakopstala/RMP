@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import ColorCardComponent from '../ColorCardComponent/ColorCardComponent';
-import { getColorsListFromLS, setColorsListFormLS } from '../../util/localStorage';
+import { getColorsListFromLS } from '../../util/localStorage';
 import useColors from './../../state/AddColor.state';
 import './RemoveColor.style.scss';
 
@@ -19,9 +19,10 @@ const RemoveColorComponent = () => {
   }
 
   return (
-    <>
+    <div className='RemoveColor-Wrapper'>
+              <div className="background" />
       <h3>Your color list</h3>
-      <div className='RemoveColor-Wrapper'>
+      <div>
         { colorList.map((item, index) => (
           <div onClick={() => handleColorClick(item)} key={ index + item.colorHex }>
             <ColorCardComponent
@@ -32,7 +33,7 @@ const RemoveColorComponent = () => {
           </div>
           )) }
       </div>
-    </>
+    </div>
   )
 }
 

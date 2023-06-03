@@ -1,15 +1,12 @@
 .background {
-  background-color: var(--base-background-color);
+  background-color: #fff;
   background-size: cover;
   width: 100vw;
-  height: 80vh;
+  height: 100vh;
   position: absolute;
   z-index: -1;
-}
-
-.main-part {
-  width: 100vw;
-  margin: auto;
+  opacity: 0.6;
+  top: 0;
 }
 
 .main-heading {
@@ -28,5 +25,4 @@
   justify-content: center;
   padding: 50px 0;
   margin: auto;
-  width: 1440px;
 }
